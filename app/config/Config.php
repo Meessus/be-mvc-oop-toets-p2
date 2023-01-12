@@ -7,5 +7,5 @@ define('DB_NAME', 'be_toets_p2');
 
 //URL Constanten
 define('APPROOT', dirname(dirname(__FILE__)));
-define('URLROOT', 'http://mvc-framework-p2.org');
+define('URLROOT', 'http://mvc-oop-pdo-toets-userstory.com');
 define('SITENAME', 'MVC Framework');
