@@ -8,3 +8,7 @@
     <input type="hidden" name="carId" value="<?= $data['id'] ?>">
     <input type="submit" value="Voer in">
 </form>
+<br>
+<h3>
+    <a href="<?= URLROOT; ?>/mankementen/index">Terug</a>
+</h3>

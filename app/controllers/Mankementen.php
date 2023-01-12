@@ -23,7 +23,7 @@ class Mankementen extends Controller
                     </tr>";
         }
         $data = [
-            'title' => 'Overzicht mankementen',
+            'title' => 'Overzicht Mankementen',
             'Naam' => $records[0]->Naam,
             'Type' => $records[0]->Type,
             'Email' => $records[0]->Email,
