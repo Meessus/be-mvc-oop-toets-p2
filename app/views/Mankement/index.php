@@ -3,7 +3,8 @@
 </u>
 <h2>Naam instructeur : <?= $data['Naam'] ?></h2>
 <h2>E-mailadres : <?= $data['Email'] ?></h2>
-<h2>Kenteken auto : <?= $data['Kenteken'] ?> - <?= $data['Type'] ?></h2>
+<h2>Kenteken auto : <?= $data['Kenteken'] ?></h2>
+<h2>Type: <?= $data['Type'] ?></h2>
 <table>
     <thead>
         <tr>
