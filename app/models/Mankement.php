@@ -16,21 +16,21 @@ class Mankement
                 SELECT 
                     instructeur.Naam,
                     instructeur.Email,
-                    cars.Kenteken,
-                    cars.Type,
-                    cars.id,
+                    Auto.Kenteken,
+                    Auto.Type,
+                    Auto.id,
                     Mankement.Datum,
                     Mankement.Mankement
                 FROM 
                     instructeur
                 LEFT JOIN
-                    cars
+                    Auto
                 ON
-                    instructeur.Id = cars.InstructeurId
+                    instructeur.Id = Auto.InstructeurId
                 LEFT JOIN
                     Mankement
                 ON
-                    Mankement.AutoId = cars.Id 
+                    Mankement.AutoId = Auto.Id 
                 WHERE
                     instructeur.id = '2'
                 ORDER BY
@@ -45,17 +45,17 @@ class Mankement
         $this->db->query(
             "
             SELECT
-                cars.id AS AutoId,
-                cars.Kenteken,
-                cars.Type
+                Auto.id AS AutoId,
+                Auto.Kenteken,
+                Auto.Type
             FROM 
-                cars
+                Auto
             LEFT JOIN
                 Mankement
             ON
-                Mankement.AutoId = cars.Id 
+                Mankement.AutoId = Auto.Id 
             WHERE
-                Cars.id = :id"
+                Auto.id = :id"
         );
         $this->db->bind(':id', $id);
         return $this->db->resultSet();
